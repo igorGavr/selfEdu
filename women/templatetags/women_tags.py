@@ -20,4 +20,5 @@ def show_categories(sort=None, cat_selected=0):
 @register.inclusion_tag('women/menu.html')
 def show_menu():
     menu = Menu.objects.all()
+
     return {"menu": menu}
